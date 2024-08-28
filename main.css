@@ -25,7 +25,7 @@ a {
 }
 
 a:hover {
-  color: rgba(249, 105, 14, 1);
+  color: rgba(10, 126, 25);
 }
 
 ul {
@@ -222,9 +222,9 @@ nav {
   font-weight: 400;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 5s steps(12), blink 1s ease-in-out 5s infinite;
+  animation: typing 8s steps(20), blink 1s ease-in-out 5s infinite;
   animation-delay: 2s;
-  width: 22.5ch;
+  width: 28ch;
   margin: auto;
   border-right: 4px solid rgba(255, 255, 255, 1);
 }
@@ -235,7 +235,7 @@ nav {
     color: rgb(10, 126, 25);
   }
   100% {
-    width: 22.5ch;
+    width: 28ch;
   }
 }
 
@@ -305,7 +305,7 @@ nav {
 
 .about {
   width: 100%;
-  max-width: 70rem;
+  max-width: 150rem;
   margin: auto;
 }
 
@@ -315,12 +315,24 @@ nav {
   min-height: 50vh;
 }
 
-.about-img img {
-  height: auto;
-  width: 20vw;
-  min-width: 10vh;
-  margin: 2rem;
-  padding-right: 4rem;
+.about-image img {
+  width: 150px; /* Set the image width */
+  height: auto; /* Maintain aspect ratio */
+   /* Make the image circular */
+}
+
+.programming-and-music {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.programming-languages {
+  width: 800px;
+}
+
+.spotify-playlist {
+  width: 250px;
 }
 
 .about-text-box {
@@ -332,6 +344,11 @@ nav {
 .about-text-box h2 {
   font-size: 5rem;
   margin-bottom: 20px;
+}
+
+.about-text-box h3 {
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 .about-text-box p {
