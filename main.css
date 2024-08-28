@@ -328,7 +328,7 @@ nav {
 }
 
 .programming-languages {
-  width: 800px;
+  width: 650px;
 }
 
 .spotify-playlist {
@@ -356,6 +356,75 @@ nav {
   font-size: 1.7rem;
   padding: 0;
   margin-bottom: 1.45rem;
+}
+
+hr {
+  margin: 4rem 0;
+  background: linear-gradient(
+    to right,
+    rgb(10, 126, 25),
+    rgba(228, 239, 233, 1)
+  );
+  border: 0;
+  height: 1px;
+}
+
+/* Education */
+.education {
+  width: 100%;
+  max-width: 150rem;
+  margin: auto;
+}
+
+.education .container {
+  display: flex;
+  align-items: left;
+  min-height: 50vh;
+}
+
+.education-image img {
+  width: 150px; /* Set the image width */
+  height: auto; /* Maintain aspect ratio */
+   /* Make the image circular */
+}
+
+.education-text-box h2 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.education-text-box h3 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}.education-text-box h3:hover {
+  color: 	rgb(207,181,59);
+}
+
+.education-text-box h1{
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.education-text-box h1:hover {
+  color: 	rgb(220,20,60);
+}
+
+.education-text-box h5{
+  font-size: 2rem;
+  margin-bottom: 25px;
+}.education-text-box h5:hover {
+  color: 	rgb(199,21,133);
+}
+
+.education-text-box h4{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.education-text-box p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  padding: 0;
+  margin-bottom: 1rem;
 }
 
 hr {
