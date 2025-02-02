@@ -69,20 +69,33 @@
     ];
   
     noButton.addEventListener('click', function() {
-      if (noClickCount < 5) {
+    if (noClickCount < 5) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
-        buttonHeight += 35; // Increase height by 5px on each click
+        buttonHeight += 35; // Increase height by 35px on each click
         buttonWidth += 35;
-        fontSize += 25; // Increase font size by 1px on each click
+        fontSize += 25; // Increase font size by 25px on each click
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 6) {
-          noButton.textContent = ["No", "Are you sure?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry..."][noClickCount];
+
+        const messages = [
+            "No",
+            "Are you sure Catherine?",
+            "Pooks please",
+            "Don't do this to me Ma'am :(",
+            "You're breaking my heart",
+            "I'm gonna cry and drink..."
+        ];
+
+        if (noClickCount < messages.length) {
+            noButton.textContent = messages[noClickCount];
         }
-      }
-    });
+    } else {
+        window.location.href = "https://en.wikipedia.org/wiki/Ginger";
+    }
+});
+
   
     yesButton.addEventListener('click', () => {
       imageDisplay.src = './images/image7.gif'; // Change to image7.gif
